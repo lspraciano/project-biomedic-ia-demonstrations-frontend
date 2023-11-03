@@ -1,0 +1,33 @@
+.home-page-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--cor-5);
+}
+
+.home-page-content__title-zone {
+
+}
+
+.home-page-content__describe-zone {
+    width: 50%;
+    text-align: justify;
+    padding: 1rem;
+}
+
+.home-page-content__button-zone {
+    display: flex;
+    width: 50%;
+    justify-content: flex-end;
+}
+
+.home-page-content__button-zone .MuiButtonBase-root {
+    background-color: var(--cor-4) !important;
+}
+
+.home-page-content__button-zone .MuiButtonBase-root:hover {
+    background-color: var(--cor-5) !important;
+}

@@ -1,0 +1,34 @@
+.image-carousel {
+    height: 5rem;
+    border-radius: .5rem;
+}
+
+.alice-carousel {
+    background-color: var(--cor-base) !important;
+    padding: .5rem;
+    border-radius: .5rem;
+}
+
+.alice-carousel__dots {
+    margin: unset !important;
+    /*display: none;*/
+}
+
+.alice-carousel__prev-btn {
+    text-align: start !important;
+}
+
+.alice-carousel__next-btn {
+    text-align: end !important;
+}
+
+.alice-carousel__prev-btn,
+.alice-carousel__next-btn {
+    position: relative;
+    padding: unset !important;
+    display: none !important;
+
+}
+
+.alice-carousel__stage-item {
+}

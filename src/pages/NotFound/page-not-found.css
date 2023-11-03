@@ -1,0 +1,34 @@
+.not-found__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    color: var(--cor-5);
+}
+
+.content_image-zone {
+    display: flex;
+    width: 80%;
+    max-width: 50vw;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 250px;
+    min-width: 300px;
+    background-color: var(--cor-1);
+    border-radius: .5rem;
+    padding: 2rem;
+}
+
+.image-zone__image {
+    width: 80%;
+    height: 80%;
+}
+
+.content__title {
+    font-size: 3rem;
+}
+
+.content__msg {
+}

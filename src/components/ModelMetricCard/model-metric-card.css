@@ -1,0 +1,13 @@
+.mod-card-metr-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: .5rem 1rem .5rem 1rem;
+    background-color: var(--cor-base);
+    gap: 1rem;
+    border-radius: .5rem;
+}
+
+.mod-card-metr-content .mod-card-metr-content__infos-zone {
+    text-align: right;
+}
