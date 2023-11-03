@@ -1,0 +1,125 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="Eslint" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="HtmlUnknownTag" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="myValues">
+        <value>
+          <list size="7">
+            <item index="0" class="java.lang.String" itemvalue="nobr" />
+            <item index="1" class="java.lang.String" itemvalue="noembed" />
+            <item index="2" class="java.lang.String" itemvalue="comment" />
+            <item index="3" class="java.lang.String" itemvalue="noscript" />
+            <item index="4" class="java.lang.String" itemvalue="embed" />
+            <item index="5" class="java.lang.String" itemvalue="script" />
+            <item index="6" class="java.lang.String" itemvalue="box-icon" />
+          </list>
+        </value>
+      </option>
+      <option name="myCustomValuesEnabled" value="true" />
+    </inspection_tool>
+    <inspection_tool class="PyPackageRequirementsInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredPackages">
+        <value>
+          <list size="85">
+            <item index="0" class="java.lang.String" itemvalue="numba" />
+            <item index="1" class="java.lang.String" itemvalue="joblib" />
+            <item index="2" class="java.lang.String" itemvalue="threadpoolctl" />
+            <item index="3" class="java.lang.String" itemvalue="PyYAML" />
+            <item index="4" class="java.lang.String" itemvalue="httptools" />
+            <item index="5" class="java.lang.String" itemvalue="jupyterlab-widgets" />
+            <item index="6" class="java.lang.String" itemvalue="Pygments" />
+            <item index="7" class="java.lang.String" itemvalue="pyzmq" />
+            <item index="8" class="java.lang.String" itemvalue="anyio" />
+            <item index="9" class="java.lang.String" itemvalue="uvicorn" />
+            <item index="10" class="java.lang.String" itemvalue="jsonschema" />
+            <item index="11" class="java.lang.String" itemvalue="xxhash" />
+            <item index="12" class="java.lang.String" itemvalue="comm" />
+            <item index="13" class="java.lang.String" itemvalue="pydantic" />
+            <item index="14" class="java.lang.String" itemvalue="jupyter_client" />
+            <item index="15" class="java.lang.String" itemvalue="orjson" />
+            <item index="16" class="java.lang.String" itemvalue="pyod" />
+            <item index="17" class="java.lang.String" itemvalue="click" />
+            <item index="18" class="java.lang.String" itemvalue="ipykernel" />
+            <item index="19" class="java.lang.String" itemvalue="fonttools" />
+            <item index="20" class="java.lang.String" itemvalue="jedi" />
+            <item index="21" class="java.lang.String" itemvalue="platformdirs" />
+            <item index="22" class="java.lang.String" itemvalue="widgetsnbextension" />
+            <item index="23" class="java.lang.String" itemvalue="matplotlib" />
+            <item index="24" class="java.lang.String" itemvalue="charset-normalizer" />
+            <item index="25" class="java.lang.String" itemvalue="dash" />
+            <item index="26" class="java.lang.String" itemvalue="lightgbm" />
+            <item index="27" class="java.lang.String" itemvalue="plotly-resampler" />
+            <item index="28" class="java.lang.String" itemvalue="llvmlite" />
+            <item index="29" class="java.lang.String" itemvalue="importlib-metadata" />
+            <item index="30" class="java.lang.String" itemvalue="jupyter-dash" />
+            <item index="31" class="java.lang.String" itemvalue="pycaret" />
+            <item index="32" class="java.lang.String" itemvalue="pyrsistent" />
+            <item index="33" class="java.lang.String" itemvalue="zipp" />
+            <item index="34" class="java.lang.String" itemvalue="nest-asyncio" />
+            <item index="35" class="java.lang.String" itemvalue="supervision" />
+            <item index="36" class="java.lang.String" itemvalue="roboflow" />
+            <item index="37" class="java.lang.String" itemvalue="prompt-toolkit" />
+            <item index="38" class="java.lang.String" itemvalue="urllib3" />
+            <item index="39" class="java.lang.String" itemvalue="Cython" />
+            <item index="40" class="java.lang.String" itemvalue="ipywidgets" />
+            <item index="41" class="java.lang.String" itemvalue="scipy" />
+            <item index="42" class="java.lang.String" itemvalue="tornado" />
+            <item index="43" class="java.lang.String" itemvalue="opencv-python" />
+            <item index="44" class="java.lang.String" itemvalue="nbformat" />
+            <item index="45" class="java.lang.String" itemvalue="fastjsonschema" />
+            <item index="46" class="java.lang.String" itemvalue="ultralytics" />
+            <item index="47" class="java.lang.String" itemvalue="tqdm" />
+            <item index="48" class="java.lang.String" itemvalue="fastapi" />
+            <item index="49" class="java.lang.String" itemvalue="sktime" />
+            <item index="50" class="java.lang.String" itemvalue="typing_extensions" />
+            <item index="51" class="java.lang.String" itemvalue="debugpy" />
+            <item index="52" class="java.lang.String" itemvalue="imbalanced-learn" />
+            <item index="53" class="java.lang.String" itemvalue="absl-py" />
+            <item index="54" class="java.lang.String" itemvalue="protobuf" />
+            <item index="55" class="java.lang.String" itemvalue="python-dateutil" />
+            <item index="56" class="java.lang.String" itemvalue="cffi" />
+            <item index="57" class="java.lang.String" itemvalue="python-dotenv" />
+            <item index="58" class="java.lang.String" itemvalue="h11" />
+            <item index="59" class="java.lang.String" itemvalue="cycler" />
+            <item index="60" class="java.lang.String" itemvalue="numpy" />
+            <item index="61" class="java.lang.String" itemvalue="pycparser" />
+            <item index="62" class="java.lang.String" itemvalue="pydantic-core" />
+            <item index="63" class="java.lang.String" itemvalue="sniffio" />
+            <item index="64" class="java.lang.String" itemvalue="sounddevice" />
+            <item index="65" class="java.lang.String" itemvalue="starlette" />
+            <item index="66" class="java.lang.String" itemvalue="pyparsing" />
+            <item index="67" class="java.lang.String" itemvalue="websockets" />
+            <item index="68" class="java.lang.String" itemvalue="annotated-types" />
+            <item index="69" class="java.lang.String" itemvalue="opencv-contrib-python" />
+            <item index="70" class="java.lang.String" itemvalue="watchfiles" />
+            <item index="71" class="java.lang.String" itemvalue="six" />
+            <item index="72" class="java.lang.String" itemvalue="kiwisolver" />
+            <item index="73" class="java.lang.String" itemvalue="packaging" />
+            <item index="74" class="java.lang.String" itemvalue="typing-extensions" />
+            <item index="75" class="java.lang.String" itemvalue="dynaconf" />
+            <item index="76" class="java.lang.String" itemvalue="attrs" />
+            <item index="77" class="java.lang.String" itemvalue="contourpy" />
+            <item index="78" class="java.lang.String" itemvalue="pyyaml" />
+            <item index="79" class="java.lang.String" itemvalue="flatbuffers" />
+            <item index="80" class="java.lang.String" itemvalue="mediapipe" />
+            <item index="81" class="java.lang.String" itemvalue="colorama" />
+            <item index="82" class="java.lang.String" itemvalue="cvzone" />
+            <item index="83" class="java.lang.String" itemvalue="pillow" />
+            <item index="84" class="java.lang.String" itemvalue="idna" />
+          </list>
+        </value>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredIdentifiers">
+        <list>
+          <option value="int.in_" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyUnusedLocalInspection" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
+    <inspection_tool class="SqlDialectInspection" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="TsLint" enabled="true" level="WARNING" enabled_by_default="true" />
+  </profile>
+</component>
