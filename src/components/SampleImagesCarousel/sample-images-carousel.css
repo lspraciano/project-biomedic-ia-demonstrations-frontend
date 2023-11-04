@@ -4,14 +4,18 @@
 }
 
 .alice-carousel {
-    background-color: var(--cor-base) !important;
+    width: 100%;
+    position: relative;
+    text-align: center;
     padding: .5rem;
     border-radius: .5rem;
+    margin: auto;
+    direction: ltr;
+    background-color: var(--cor-base) !important;
 }
 
 .alice-carousel__dots {
     margin: unset !important;
-    /*display: none;*/
 }
 
 .alice-carousel__prev-btn {
@@ -31,4 +35,5 @@
 }
 
 .alice-carousel__stage-item {
+    cursor: pointer !important;
 }

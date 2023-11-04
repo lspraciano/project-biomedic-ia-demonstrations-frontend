@@ -1,32 +1,39 @@
-import './sample-images-carousel.css'
-import PropTypes from "prop-types"
-import AliceCarousel from 'react-alice-carousel'
-import 'react-alice-carousel/lib/alice-carousel.css'
+import './sample-images-carousel.css';
+import PropTypes from "prop-types";
+import AliceCarousel from 'react-alice-carousel';
+import 'react-alice-carousel/lib/alice-carousel.css';
 
 SampleImagesCarousel.propTypes = {
-    imagesList: PropTypes.array
+    imagesList: PropTypes.array,
+    setFunction: PropTypes.func
 };
 
 export default function SampleImagesCarousel(
     {
-        imagesList
+        imagesList,
+        setFunction
     }
 ) {
 
     const responsive = {
-        1600: {
+        1680: {
             items: 4,
             itemsFit: 'fill',
         },
-        1200: {
+        1450: {
             items: 3,
             itemsFit: 'fill',
         },
-        830: {
+        1000: {
             items: 2,
             itemsFit: 'fill',
         }
-    }
+    };
+
+    const handleImageClick = (event) => {
+        const imagePath = event.target.src;
+        setFunction(imagePath);
+    };
 
     return (
         <AliceCarousel
@@ -44,6 +51,7 @@ export default function SampleImagesCarousel(
                             src={image}
                             alt={"imagem de células sanguíneas de um esfregaço"}
                             key={index}
+                            onClick={handleImageClick}
                         />
                     }
                 )

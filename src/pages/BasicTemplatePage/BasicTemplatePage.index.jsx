@@ -1,5 +1,5 @@
-import "./basic-template-page.css"
-import PropTypes from "prop-types"
+import "./basic-template-page.css";
+import PropTypes from "prop-types";
 
 BasicTemplatePage.propTypes = {
     children: PropTypes.node

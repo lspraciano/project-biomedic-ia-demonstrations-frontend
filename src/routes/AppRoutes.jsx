@@ -1,6 +1,6 @@
-import {BrowserRouter as Router, Route, Routes} from "react-router-dom"
-import HomePage from "../pages/HomePage/HomePage.index.jsx"
-import NotFound from "../pages/NotFound/PageNotFound.jsx"
+import {BrowserRouter as Router, Route, Routes} from "react-router-dom";
+import HomePage from "../pages/HomePage/HomePage.index.jsx";
+import NotFound from "../pages/NotFound/PageNotFound.jsx";
 import PredictPage from "../pages/PredictPage/PredictPage.index.jsx";
 
 

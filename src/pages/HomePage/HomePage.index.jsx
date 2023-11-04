@@ -1,8 +1,8 @@
-import "./home-page.css"
-import BasicTemplatePage from "../BasicTemplatePage/BasicTemplatePage.index.jsx"
-import {Button} from "@mui/material"
-import {Link} from "react-router-dom"
-import ThumbUpIcon from '@mui/icons-material/ThumbUp'
+import "./home-page.css";
+import BasicTemplatePage from "../BasicTemplatePage/BasicTemplatePage.index.jsx";
+import {Button} from "@mui/material";
+import {Link} from "react-router-dom";
+import ThumbUpIcon from '@mui/icons-material/ThumbUp';
 
 export default function HomePage() {
     return (
