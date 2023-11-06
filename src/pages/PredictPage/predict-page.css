@@ -26,6 +26,11 @@
     letter-spacing: .05rem;
 }
 
+.header-zone__model-name p {
+    font-size: .8rem;
+    font-weight: 400;
+}
+
 .predict-page-content__header-zone .header-zone__model-infos {
     display: flex;
     flex-direction: row;
@@ -69,11 +74,33 @@
 }
 
 .predict-page-content__body-zone .body-zone__options-zone .options-zone__images-sample {
+    display: flex;
+    flex-direction: column;
+    font-size: .9rem;
     padding: 1rem;
+    gap: 1rem;
+}
+
+.predict-page-content__body-zone .body-zone__options-zone .options-zone__images-sample a {
+    padding: .2rem;
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: var(--cor-base);
 }
 
 .options-zone__loader-image {
     width: 100%;
     gap: 1rem;
+    padding: 1rem;
+}
+
+.predict-page-content__footer-zone {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--cor-3);
+    border-radius: .5rem;
     padding: 1rem;
 }

@@ -1,10 +1,10 @@
 import {createAsyncThunk, createSlice} from "@reduxjs/toolkit";
 import {axiosRequester} from "../../requests/axiosClients.js";
-// import axios from 'axios';
 
 const initialState = {
-    loading: true,
-    displayedImage: ""
+    loading: false,
+    displayedImage: "",
+    detections: {}
 }
 
 export const predictImage = createAsyncThunk(
@@ -39,7 +39,12 @@ export const predictImage = createAsyncThunk(
                 formData,
                 config,
             )
-            return URL.createObjectURL(new Blob([await response.data]));
+
+            const image_data = URL.createObjectURL(new Blob([await response.data])).toString();
+            const detections = response.headers["detections"];
+
+            return {image_data, detections}
+
         } catch (error) {
             return rejectWithValue(
                 error.response.data
@@ -79,7 +84,8 @@ export const predictPageSlice = createSlice({
                         state,
                         action
                     ) => {
-                        state.displayedImage = action.payload;
+                        state.detections = action.payload["detections"]
+                        state.displayedImage = action.payload["image_data"];
                         state.loading = false;
                     }
                 )
