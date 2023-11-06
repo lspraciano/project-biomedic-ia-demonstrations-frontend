@@ -16,23 +16,23 @@ export default function DragAndDropFile(
         event.preventDefault();
     };
 
-    const handleDrop = (event) => {
+    const handleDrop = async (event) => {
         event.preventDefault();
 
         const file = event.dataTransfer.files[0];
 
         if (file) {
             const objectURL = URL.createObjectURL(file);
-            setFunction(objectURL);
+            await setFunction(objectURL);
         }
     };
 
-    const handleChange = (event) => {
+    const handleChange = async (event) => {
         const filePath = event.target.files[0];
 
         if (filePath) {
             const objectURL = URL.createObjectURL(filePath);
-            setFunction(objectURL);
+            await setFunction(objectURL);
         }
     };
 

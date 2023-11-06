@@ -11,7 +11,7 @@ import image6 from "./images/leuc (6).jpg";
 import DragAndDropFile from "../../components/DragAndDropFile/DragAndDropFile.index.jsx";
 import {useEffect} from "react";
 import {useDispatch, useSelector} from "react-redux";
-import {resetPredictPageState, setImageDisplayed} from "../../redux/pages/predictPageSlice.js";
+import {predictImage, resetPredictPageState, setImageDisplayed} from "../../redux/pages/predictPageSlice.js";
 
 
 const sampleImagesList = [
@@ -62,16 +62,24 @@ export default function PredictPage() {
         []
     );
 
-
-    const setImageToBeDisplayed = (
+    const setImageToBeDisplayed = async (
         filePath
     ) => {
-        dispatch(
+        await dispatch(
             setImageDisplayed(
                 filePath
             )
         );
+
+        await dispatch(
+            predictImage(
+                {
+                    filePath: filePath
+                }
+            )
+        );
     };
+
 
     return (
         <BasicTemplatePage>

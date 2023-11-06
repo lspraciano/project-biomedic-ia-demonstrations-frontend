@@ -30,9 +30,9 @@ export default function SampleImagesCarousel(
         }
     };
 
-    const handleImageClick = (event) => {
+    const handleImageClick = async (event) => {
         const imagePath = event.target.src;
-        setFunction(imagePath);
+        await setFunction(imagePath);
     };
 
     return (

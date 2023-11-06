@@ -3,6 +3,7 @@ import CrisisAlertIcon from '@mui/icons-material/CrisisAlert';
 import AutoGraphIcon from '@mui/icons-material/AutoGraph';
 import GrainIcon from '@mui/icons-material/Grain';
 import PropTypes from "prop-types";
+import {Tooltip} from "@mui/material";
 
 ModelMetricCardIndex.propTypes = {
     metricName: PropTypes.string,
@@ -12,7 +13,7 @@ ModelMetricCardIndex.propTypes = {
 export default function ModelMetricCardIndex(
     {
         metricName,
-        metricResult
+        metricResult,
     }
 ) {
 
@@ -24,28 +25,30 @@ export default function ModelMetricCardIndex(
     };
 
     return (
-        <div
-            className={"mod-card-metr-content"}
-        >
+        <Tooltip title={metricName}>
             <div
-                className={"mod-card-metr-content__icon-zone"}
-            >
-                {metricsIcons[metricName.toLocaleLowerCase()]}
-            </div>
-            <div
-                className={"mod-card-metr-content__infos-zone"}
+                className={"mod-card-metr-content"}
             >
                 <div
-                    className={"infos-zone__metric-name"}
+                    className={"mod-card-metr-content__icon-zone"}
                 >
-                    {metricName}
+                    {metricsIcons[metricName.toLocaleLowerCase()]}
                 </div>
                 <div
-                    className={"infos-zone__metric-result"}
+                    className={"mod-card-metr-content__infos-zone"}
                 >
-                    {metricResult}
+                    <div
+                        className={"infos-zone__metric-name"}
+                    >
+                        {metricName}
+                    </div>
+                    <div
+                        className={"infos-zone__metric-result"}
+                    >
+                        {metricResult}
+                    </div>
                 </div>
             </div>
-        </div>
+        </Tooltip>
     );
 }
