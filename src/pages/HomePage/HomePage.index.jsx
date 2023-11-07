@@ -26,7 +26,7 @@ export default function HomePage() {
                         que nosso principal objetivo é demonstrar possíveis áreas
                         de atuação da IA na saúde. No entanto, é fundamental ressaltar
                         que essa aplicação não possui relevância clínica e que foi treinada
-                        em imagens escaneadas de esfregaço sanguíneo.
+                        com limitações nas imagens, o que prejudica o desempenho dela.
                     </p>
                 </div>
                 <div

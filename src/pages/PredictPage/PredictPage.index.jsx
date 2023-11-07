@@ -78,15 +78,15 @@ const modelsData = [
         metrics: [
             {
                 name: "Recall",
-                value: 97.7
+                value: 93.1
             },
             {
                 name: "Precision",
-                value: 97.3
+                value: 95.5
             },
             {
                 name: "mAP",
-                value: 97.9
+                value: 95.6
             }
         ],
         sampleImageList: [
