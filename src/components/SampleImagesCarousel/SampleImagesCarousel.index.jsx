@@ -5,13 +5,15 @@ import 'react-alice-carousel/lib/alice-carousel.css';
 
 SampleImagesCarousel.propTypes = {
     imagesList: PropTypes.array,
-    setFunction: PropTypes.func
+    setFunction: PropTypes.func,
+    targetUrl: PropTypes.string
 };
 
 export default function SampleImagesCarousel(
     {
         imagesList,
-        setFunction
+        setFunction,
+        targetUrl,
     }
 ) {
 
@@ -32,7 +34,9 @@ export default function SampleImagesCarousel(
 
     const handleImageClick = async (event) => {
         const imagePath = event.target.src;
-        await setFunction(imagePath);
+        await setFunction(
+            imagePath, targetUrl
+        );
     };
 
     return (

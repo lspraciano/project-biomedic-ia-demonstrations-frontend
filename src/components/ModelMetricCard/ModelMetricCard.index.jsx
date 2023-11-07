@@ -5,12 +5,12 @@ import GrainIcon from '@mui/icons-material/Grain';
 import PropTypes from "prop-types";
 import {Tooltip} from "@mui/material";
 
-ModelMetricCardIndex.propTypes = {
+ModelMetricCard.propTypes = {
     metricName: PropTypes.string,
     metricResult: PropTypes.number,
 };
 
-export default function ModelMetricCardIndex(
+export default function ModelMetricCard(
     {
         metricName,
         metricResult,

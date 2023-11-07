@@ -3,15 +3,17 @@ import {axiosRequester} from "../../requests/axiosClients.js";
 
 const initialState = {
     loading: false,
+    currentModelId: 0,
     displayedImage: "",
-    detections: {}
+    detections: {},
 }
 
 export const predictImage = createAsyncThunk(
-    "predictPage/predictImage",
+    "predictTool/predictImage",
     async (
         {
-            filePath
+            filePath,
+            endpointTarget
         },
         {
             rejectWithValue
@@ -35,7 +37,7 @@ export const predictImage = createAsyncThunk(
         try {
 
             const response = await axiosRequester().post(
-                "hematological-slides/predict",
+                endpointTarget,
                 formData,
                 config,
             )
@@ -53,11 +55,11 @@ export const predictImage = createAsyncThunk(
     }
 )
 
-export const predictPageSlice = createSlice({
-        name: "predictPage",
+export const predictToolSlice = createSlice({
+        name: "predictTool",
         initialState,
         reducers: {
-            resetPredictPageState: () => {
+            resetPredictToolState: () => {
                 return {
                     ...initialState
                 };
@@ -69,6 +71,15 @@ export const predictPageSlice = createSlice({
                 return {
                     ...state,
                     displayedImage: action.payload
+                }
+            },
+            setPredictToolState: (
+                state,
+                action
+            ) => {
+                return {
+                    ...state,
+                    ...action.payload
                 }
             },
         },
@@ -104,6 +115,7 @@ export const predictPageSlice = createSlice({
 
 export const {
     setImageDisplayed,
-    resetPredictPageState,
-} = predictPageSlice.actions;
-export default predictPageSlice.reducer
+    setPredictToolState,
+    resetPredictToolState,
+} = predictToolSlice.actions;
+export default predictToolSlice.reducer

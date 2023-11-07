@@ -3,12 +3,14 @@ import PropTypes from "prop-types";
 
 
 DragAndDropFile.propTypes = {
-    setFunction: PropTypes.func
+    setFunction: PropTypes.func,
+    targetUrl: PropTypes.string
 };
 
 export default function DragAndDropFile(
     {
-        setFunction
+        setFunction,
+        targetUrl
     }
 ) {
 
@@ -23,7 +25,10 @@ export default function DragAndDropFile(
 
         if (file) {
             const objectURL = URL.createObjectURL(file);
-            await setFunction(objectURL);
+            await setFunction(
+                objectURL,
+                targetUrl
+            );
         }
     };
 
@@ -32,7 +37,10 @@ export default function DragAndDropFile(
 
         if (filePath) {
             const objectURL = URL.createObjectURL(filePath);
-            await setFunction(objectURL);
+            await setFunction(
+                objectURL,
+                targetUrl
+            );
         }
     };
 

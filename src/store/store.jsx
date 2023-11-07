@@ -1,10 +1,10 @@
 import {configureStore} from "@reduxjs/toolkit";
-import predictPageSlice from "../redux/pages/predictPageSlice";
+import predictToolSlice from "../redux/component/predictToolSlice.js";
 
 export const store = configureStore(
     {
         reducer: {
-            predictPageState: predictPageSlice,
+            predictToolState: predictToolSlice,
         }
     }
 )
