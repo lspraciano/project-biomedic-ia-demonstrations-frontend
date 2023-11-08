@@ -1,4 +1,5 @@
 import "./predict-tool.css";
+import "./predict-tool-media-queries.css";
 import ModelMetricCardIndex from "../../components/ModelMetricCard/ModelMetricCard.index.jsx";
 import SampleImagesCarousel from "../../components/SampleImagesCarousel/SampleImagesCarousel.index.jsx";
 import DragAndDropFile from "../../components/DragAndDropFile/DragAndDropFile.index.jsx";

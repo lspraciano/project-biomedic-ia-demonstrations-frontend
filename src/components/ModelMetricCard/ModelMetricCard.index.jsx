@@ -1,4 +1,5 @@
 import "./model-metric-card.css";
+import "./model-metric-card-media-queries.css"
 import CrisisAlertIcon from '@mui/icons-material/CrisisAlert';
 import AutoGraphIcon from '@mui/icons-material/AutoGraph';
 import GrainIcon from '@mui/icons-material/Grain';

@@ -1,0 +1,12 @@
+@media screen and (min-width: 0px) and (max-width: 1000px) {
+    .mod-card-metr-content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: .3rem .6rem .3rem .6rem;
+        background-color: var(--cor-base);
+        gap: .2rem;
+        border-radius: .5rem;
+        font-size: .85rem;
+    }
+}

@@ -22,12 +22,8 @@ export default function SampleImagesCarousel(
             items: 4,
             itemsFit: 'fill',
         },
-        1450: {
-            items: 3,
-            itemsFit: 'fill',
-        },
-        1000: {
-            items: 2,
+        0: {
+            items: 4,
             itemsFit: 'fill',
         }
     };
@@ -43,9 +39,12 @@ export default function SampleImagesCarousel(
         <AliceCarousel
             mouseTracking
             autoPlay={true}
-            autoPlayInterval={3000}
+            autoPlayInterval={1000}
             infinite={true}
             autoHeight={true}
+            disableButtonsControls
+            disableDotsControls
+            disableSlideInfo
             responsive={responsive}
             items={
                 imagesList.map(

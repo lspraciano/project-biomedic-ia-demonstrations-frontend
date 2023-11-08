@@ -1,0 +1,84 @@
+@media screen and (min-width: 1000px) and (max-width: 1200px) {
+    .predict-tool-content__header-zone {
+        width: 90%;
+    }
+
+    .predict-tool-content__body-zone {
+        width: 90%;
+    }
+
+    .predict-tool-content__footer-zone {
+        width: 90%;
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width: 1000px) {
+    .predict-tool-content {
+        align-items: center !important;
+        justify-content: unset !important;
+        padding: 2rem 0 0 0;
+    }
+
+
+    .predict-tool-content__header-zone {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+    }
+
+    .header-zone__model-name {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+
+    .header-zone__model-name .MuiOutlinedInput-input {
+        font-size: 1rem;
+        padding: .5rem;
+    }
+
+    .header-zone__model-infos {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    .predict-tool-content__body-zone {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .body-zone__result-zone {
+        width: 100% !important;
+    }
+
+    .predict-tool-content__body-zone .body-zone__result-zone img {
+        max-height: 20vh;
+    }
+
+    .predict-tool-content__body-zone .body-zone__options-zone {
+        width: 100%;
+    }
+
+    .predict-tool-content__body-zone .body-zone__options-zone .options-zone__images-sample {
+        display: flex;
+        flex-direction: column;
+        font-size: .8rem;
+    }
+
+    .predict-tool-content__footer-zone {
+        width: 90%;
+        padding: .7rem;
+        font-size: .8rem;
+    }
+}
+
+/*@media screen and (min-width: 0px) and (max-width: 400px) {*/
+
+/*}*/
