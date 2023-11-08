@@ -1,0 +1,10 @@
+version: "3.8"
+services:
+  front:
+    container_name: project_biomedic_ia_demonstrations_frontend
+    image: lucaspraciano/project_biomedic_ia_demonstrations_frontend
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    ports:
+      - "8001:8001"

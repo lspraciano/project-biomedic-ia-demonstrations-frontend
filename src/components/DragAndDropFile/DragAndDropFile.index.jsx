@@ -1,5 +1,6 @@
 import "./drag-and-drop-file.css";
 import PropTypes from "prop-types";
+import cloudUpload from "./images/cloud-upload_15.png"
 
 
 DragAndDropFile.propTypes = {
@@ -55,7 +56,7 @@ export default function DragAndDropFile(
                 htmlFor={"input-file"}
             >
                 <img
-                    src={"src/components/DragAndDropFile/images/cloud-upload_15.png"}
+                    src={cloudUpload}
                     alt={"Imagem ilustrativa de upload"}
                 />
                 <p>

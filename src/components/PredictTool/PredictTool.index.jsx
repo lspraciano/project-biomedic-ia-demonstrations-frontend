@@ -22,7 +22,7 @@ PredictTool.propTypes = {
 
 export default function PredictTool(
     {
-        modelsData = [{}]
+        modelsData
     }
 ) {
     const predictToolState = useSelector(
@@ -33,7 +33,7 @@ export default function PredictTool(
 
     useEffect(() => {
             async function myFunc() {
-                if (modelsData !== [{}]) {
+                if (modelsData.length > 0) {
 
                     await setImageToBeDisplayed(
                         modelsData[0].sampleImageList[0],

@@ -1,6 +1,6 @@
 import axios from "axios";
 
-export const hostAddress = "127.0.0.1:8000";
+export const hostAddress = "34.172.245.118";
 export const baseUrl = `http://${hostAddress}/api/`;
 
 
