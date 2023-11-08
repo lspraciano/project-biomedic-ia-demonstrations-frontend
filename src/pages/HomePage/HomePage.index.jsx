@@ -1,4 +1,5 @@
 import "./home-page.css";
+import "./home-page-media-queries.css";
 import {Button} from "@mui/material";
 import {Link} from "react-router-dom";
 import ThumbUpIcon from '@mui/icons-material/ThumbUp';

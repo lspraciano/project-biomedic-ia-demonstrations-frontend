@@ -1,0 +1,14 @@
+@media screen and (min-width: 0px) and (max-width: 1000px) {
+    .home-page-content__title-zone {
+        width: 90%;
+        text-align: center;
+    }
+
+    .home-page-content__describe-zone {
+        width: 90%;
+    }
+
+    .home-page-content__button-zone {
+        width: 90%;
+    }
+}
