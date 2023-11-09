@@ -1,8 +1,6 @@
 import axios from "axios";
 
-export const hostAddress = "34.172.245.118";
-export const baseUrl = `http://${hostAddress}/api/`;
-
+export const baseUrl = import.meta.env.VITE_API_URL;
 
 export const axiosRequester = () => {
     return axios.create(
