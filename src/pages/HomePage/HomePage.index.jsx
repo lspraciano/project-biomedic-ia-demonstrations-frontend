@@ -15,7 +15,7 @@ export default function HomePage() {
                     className={"home-page-content__title-zone"}
                 >
                     <h1>
-                        IA Hematology Slides
+                        IA & SAÚDE
                     </h1>
                 </div>
                 <div
@@ -27,7 +27,7 @@ export default function HomePage() {
                         que nosso principal objetivo é demonstrar possíveis áreas
                         de atuação da IA na saúde. No entanto, é fundamental ressaltar
                         que essa aplicação não possui relevância clínica e que foi treinada
-                        com limitações nas imagens, o que prejudica o desempenho dela.
+                        com limitações, o que prejudica o desempenho dela.
                     </p>
                 </div>
                 <div
