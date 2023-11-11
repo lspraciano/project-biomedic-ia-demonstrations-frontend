@@ -110,6 +110,7 @@ export default function PredictTool(
                         id="model-name__simple-select"
                         value={predictToolState.currentModelId}
                         onChange={handleSelectChange}
+                        disabled={predictToolState.loading}
                     >
                         {
                             modelsData.map(
@@ -171,6 +172,7 @@ export default function PredictTool(
                         <DragAndDropFile
                             setFunction={setImageToBeDisplayed}
                             targetUrl={modelsData[predictToolState.currentModelId].targetUrl}
+                            loading={predictToolState.loading}
                         />
                     </div>
                     <div
@@ -198,6 +200,7 @@ export default function PredictTool(
                             imagesList={modelsData[predictToolState.currentModelId].sampleImageList}
                             setFunction={setImageToBeDisplayed}
                             targetUrl={modelsData[predictToolState.currentModelId].targetUrl}
+                            loading={predictToolState.loading}
                         />
                     </div>
                 </div>

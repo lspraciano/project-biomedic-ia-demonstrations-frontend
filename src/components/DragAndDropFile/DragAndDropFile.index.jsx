@@ -5,13 +5,15 @@ import cloudUpload from "./images/cloud-upload_15.png"
 
 DragAndDropFile.propTypes = {
     setFunction: PropTypes.func,
-    targetUrl: PropTypes.string
+    targetUrl: PropTypes.string,
+    loading: PropTypes.bool
 };
 
 export default function DragAndDropFile(
     {
         setFunction,
-        targetUrl
+        targetUrl,
+        loading
     }
 ) {
 
@@ -48,8 +50,8 @@ export default function DragAndDropFile(
     return (
         <div
             className={"drag-n-drop-file-content"}
-            onDragOver={handleDragOver}
-            onDrop={handleDrop}
+            onDragOver={!loading ? handleDragOver : null}
+            onDrop={!loading ? handleDrop : null}
         >
             <label
                 className={"drag-n-drop-file-content__title-zone"}
@@ -69,6 +71,7 @@ export default function DragAndDropFile(
                 value={""}
                 id={"input-file"}
                 onChange={handleChange}
+                disabled={loading}
             />
         </div>
     );

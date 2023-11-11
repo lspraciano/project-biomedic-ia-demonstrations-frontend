@@ -38,3 +38,7 @@
     max-width: 80%;
     border-radius: .5rem;
 }
+
+.image-carousel--opacity-on-loading {
+    opacity: .3;
+}

@@ -6,7 +6,8 @@ import 'react-alice-carousel/lib/alice-carousel.css';
 SampleImagesCarousel.propTypes = {
     imagesList: PropTypes.array,
     setFunction: PropTypes.func,
-    targetUrl: PropTypes.string
+    targetUrl: PropTypes.string,
+    loading: PropTypes.bool
 };
 
 export default function SampleImagesCarousel(
@@ -14,6 +15,7 @@ export default function SampleImagesCarousel(
         imagesList,
         setFunction,
         targetUrl,
+        loading
     }
 ) {
 
@@ -50,11 +52,21 @@ export default function SampleImagesCarousel(
                 imagesList.map(
                     (image, index) => {
                         return <img
-                            className={"image-carousel"}
+                            className={
+                                !loading ?
+                                    "image-carousel"
+                                    :
+                                    "image-carousel image-carousel--opacity-on-loading"
+                            }
                             src={image}
                             alt={"imagem de células sanguíneas de um esfregaço"}
                             key={index}
-                            onClick={handleImageClick}
+                            onClick={
+                                !loading ?
+                                    handleImageClick
+                                    :
+                                    null
+                            }
                         />
                     }
                 )
