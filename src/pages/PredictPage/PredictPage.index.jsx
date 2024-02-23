@@ -11,13 +11,13 @@ import {ChromosomeDataModel} from "./modelsData/citoGenChromossome.js";
 
 
 const modelsData = [
+    ChromosomeDataModel,
     leucoScanDataModel,
     leucoOcularDataModel,
     spermDataModel,
     melanomaDataModel,
     ki67DataModel,
     bloodSerumDataModel,
-    ChromosomeDataModel
 ]
 
 export default function PredictPage() {
