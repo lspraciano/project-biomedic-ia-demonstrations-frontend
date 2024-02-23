@@ -19,15 +19,15 @@ export const ChromosomeDataModel = createModel(
     [
         {
             name: "Recall",
-            value: 75.1
+            value: 97.3
         },
         {
             name: "Precision",
-            value: 74.7
+            value: 98.2
         },
         {
             name: "mAP",
-            value: 79.0
+            value: 99.1
         }
     ],
     [
