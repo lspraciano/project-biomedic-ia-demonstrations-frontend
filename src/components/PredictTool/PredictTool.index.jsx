@@ -179,7 +179,7 @@ export default function PredictTool(
                         className={"options-zone__images-sample"}
                     >
                         {
-                            predictToolState.currentModelId === 0 ?
+                            predictToolState.currentModelId === 1 ?
                                 <p>
                                     Clique
                                     <Link
