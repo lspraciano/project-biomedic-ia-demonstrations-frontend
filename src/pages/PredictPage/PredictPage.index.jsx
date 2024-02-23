@@ -7,6 +7,7 @@ import {ki67DataModel} from "./modelsData/ki67Data.js";
 import {bloodSerumDataModel} from "./modelsData/bloodSerumData.js";
 import {leucoScanDataModel} from "./modelsData/leucoScanData.js";
 import {leucoOcularDataModel} from "./modelsData/leucoOcularData.js";
+import {ChromosomeDataModel} from "./modelsData/citoGenChromossome.js";
 
 
 const modelsData = [
@@ -15,7 +16,8 @@ const modelsData = [
     spermDataModel,
     melanomaDataModel,
     ki67DataModel,
-    bloodSerumDataModel
+    bloodSerumDataModel,
+    ChromosomeDataModel
 ]
 
 export default function PredictPage() {
