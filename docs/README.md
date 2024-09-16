@@ -13,7 +13,7 @@ O deploy desta aplicação foi realizando usando google cloud e está disponíve
 através do endereço abaixo
 
 ```
-https://www.lucaspraciano.agency
+...
 ```
 
 ## ☄️ Versão Atual
@@ -112,7 +112,7 @@ navegador
 5. Acesse a Aplicação Local:
 
 ```
-http://localhost:8001/
+http://localhost:8001/biomedic-ia-demonstration-front/
 ```
 
 ou
