@@ -32,6 +32,7 @@ export const predictImage = createAsyncThunk(
                 'accept': 'image/jpeg',
             },
             responseType: 'blob',
+            timeout: 60000,
         };
 
         try {
