@@ -18,10 +18,25 @@
     cursor: pointer;
 }
 
-.drag-n-drop-file-content__title-zone img{
+.drag-n-drop-file-content__title-zone img {
     width: 20%;
 }
 
 .drag-n-drop-file-content input {
     display: none;
+}
+
+
+@media screen and (min-width: 0px) and (max-width: 1000px) {
+    .drag-n-drop-file-content {
+        height: unset;
+    }
+
+    .drag-n-drop-file-content__title-zone img {
+        width: 2rem;
+    }
+
+    .drag-n-drop-file-content__title-zone p {
+        font-size: .8rem;
+    }
 }

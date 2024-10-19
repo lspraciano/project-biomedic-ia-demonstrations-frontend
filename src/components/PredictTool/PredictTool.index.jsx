@@ -149,20 +149,23 @@ export default function PredictTool(
             <div
                 className={"predict-tool-content__body-zone"}
             >
-                <div
+                <a
                     className={"body-zone__result-zone"}
+                    href={predictToolState.displayedImage} download="image.jpg"
                 >
                     {
                         predictToolState.loading ?
                             <CircularProgress color="inherit"/>
                             :
+
                             <img
                                 className={"zone__result-zone__image"}
                                 src={predictToolState.displayedImage}
                                 alt={"imagem de células sanguíneas de um esfregaço"}
                             />
+
                     }
-                </div>
+                </a>
                 <div
                     className={"body-zone__options-zone"}
                 >
